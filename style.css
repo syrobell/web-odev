@@ -21,12 +21,11 @@ body{
 .navbar-links{
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: 35%;
     color: white;
     list-style: none;
     cursor: pointer;
-    margin-left: 5px;
-    margin-right: 5px;
+    
     
 }
 .carousel{
@@ -36,6 +35,8 @@ body{
 }
 .carousel img{
     max-width: 100%;
+    height: 476px;
+    object-fit: cover;
 }
 .carousel p{ 
     position: absolute;
@@ -77,7 +78,7 @@ body{
 .carousel-dots{
     display: flex;
     position: absolute;
-    top: 516px;
+    margin-top: 350px;
 }
 
 #selected{
@@ -92,8 +93,7 @@ body{
     
 }
 .whiteScreen h3{
-    width: 640px;
-    height: 70px;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ body{
 .whiteScreen p{
     margin-left: auto;
     margin-right: auto;
-    width: 850px;
+    width: 58%;
     height: 32px;
     text-align: center;
     font-weight: 400;
@@ -119,7 +119,7 @@ body{
 .icons{
     margin-right: auto;
     margin-left: auto;
-    width: 30%;
+    width: 55%;
     display: flex;
     justify-content: space-around;
     height: 60px;
@@ -141,9 +141,9 @@ body{
 }
 .about h2{
     position: absolute;
-    width: 120px;
+    width: 10%;
     height: 35px;
-    left: 55%;
+    margin-left: 370px;
     top: 1200px;
     font-style: normal;
     font-weight: 700;
@@ -155,19 +155,19 @@ body{
     font-family: 'Roboto';
     font-style: normal;
     position: absolute;
-    width: 138px;
+    width: 10%;
     height: 282px;
     font-weight: 400;
     font-size: 338.37px;
     line-height: 397px;
     color: rgba(255, 255, 255, 0.426);
-    left: 56%;
+    margin-left: 370px;
     top: 1200px;
 
 }
 .about p{
     position: absolute;
-    width: 970px;
+    width: 70%;
     height: 111px;
     font-weight: 400;
     font-size: 18px;
@@ -183,8 +183,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.contact-me img{
+#map-img{
     width: 100%;
+    height: 517px;
+    object-fit: cover;
 }
 .contact-me span{
     width: 400px;
@@ -245,5 +247,15 @@ body{
     padding: 0;
     color: white;
 }
-
+@media only screen and (max-width: 1024px) {
+    .navbar-links{
+        width: 35%;
+    }
+    .whiteScreen h3{
+        width: 63%;
+    }
+    .whiteScreen p{
+        width: 82%;
+    }
+}
 
